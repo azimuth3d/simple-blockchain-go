@@ -1,0 +1,9 @@
+version: "3"
+services:
+  blockchain:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ".:/home/blockchain:Z"
+    

@@ -1,0 +1,9 @@
+FROM golang:1.14.0-alpine
+RUN mkdir /home/blockchain
+WORKDIR /home/blockchain
+RUN apk update 
+RUN apk --no-cache add git gcc g++ make ca-certificates
+RUN go get github.com/cespare/reflex
+COPY ./reflex.conf /
+EXPOSE 5000
+ENTRYPOINT ["reflex", "-c", "/reflex.conf"]
