@@ -1,4 +1,4 @@
-FROM golang:1.14.0-alpine
+FROM golang:1.17.0-alpine
 RUN mkdir /home/blockchain
 WORKDIR /home/blockchain
 RUN apk update 
