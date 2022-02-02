@@ -1,4 +1,6 @@
-## Simple Blockchain with golang Implmentation
+## Simple Blockchain with golang Implementation
+
+golang simple blockchain with badger db storage
 
 ### How to development 
 
